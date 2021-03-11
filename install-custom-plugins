@@ -1,0 +1,5 @@
+# USAGE Pass in "$ZSH_CUSTOM" when calling this script
+#!/usr/bin/env zsh
+git clone git://github.com/zsh-users/zsh-autosuggestions $1/plugins/zsh-autosuggestions 
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $1/plugins/zsh-syntax-highlighting 
