@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mkdir ../.vim && mkdir ../.vim/swp && mkdir ../.vim/undodir

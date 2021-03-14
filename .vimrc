@@ -20,6 +20,10 @@ set directory=$HOME/.vim/swp// " Store swap files out of sight
 " Disable backups
 set nobackup
 
+" Turn on persistent undo
+set undofile
+set undodir=~/.vim/undodir
+
 " Status line settings
 set laststatus=2 "show status line
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
