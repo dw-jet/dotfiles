@@ -5,7 +5,7 @@ set number
 colorscheme slate
 syntax on
 set cursorline " Highlight line cursor is on
-set softtabstop=2 " Indent 2 spaces on tab
+set softtabstop=4 " Indent 4 spaces on tab
 set shiftwidth=4 " Indent 4 when auto indenting
 set tabstop=4 " Show existing tab with 4 spaces width
 set wildmenu " Display cl tab complete as menu
@@ -16,6 +16,10 @@ set smartcase
 set encoding=utf-8
 set nrformats-=octal " use decimal when inc/dec
 set directory=$HOME/.vim/swp// " Store swap files out of sight
+set virtualedit=all
+set title
+set linebreak " Smart wrap lines
+
 
 " Disable backups
 set nobackup
