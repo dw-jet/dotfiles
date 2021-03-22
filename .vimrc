@@ -36,3 +36,9 @@ set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 let g:netrw_liststyle = 1 
 let g:netrw_browse_split = 4
 let g:netrw_winsize = 20
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'rhysd/vim-grammarous'
+call plug#end()
+
