@@ -20,7 +20,6 @@ set virtualedit=all
 set title
 set linebreak " Smart wrap lines
 
-
 " Disable backups
 set nobackup
 
@@ -36,6 +35,12 @@ set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
 let g:netrw_liststyle = 1 
 let g:netrw_browse_split = 4
 let g:netrw_winsize = 20
+
+" Pane management
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
