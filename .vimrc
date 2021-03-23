@@ -42,6 +42,10 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" Center screen on next/previous match
+nnoremap n nzz
+nnoremap N Nzz
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'rhysd/vim-grammarous'
