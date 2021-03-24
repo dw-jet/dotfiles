@@ -7,3 +7,4 @@ then
 	echo Run :PlugInstall to finish setup
 else
 	echo You need to install curl first and then run this script again. Ex. sudo apt install curl
+fi
