@@ -1,6 +1,9 @@
 #!/bin/bash
-
-mkdir ../.vim && mkdir ../.vim/swp && mkdir ../.vim/undodir
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-echo Run :PlugInstall to finish setup
+if [ -e "$(which curl)" ]
+then
+	mkdir ../.vim && mkdir ../.vim/swp && mkdir ../.vim/undodir
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	echo Run :PlugInstall to finish setup
+else
+	echo You need to install curl first and then run this script again. Ex. sudo apt install curl
