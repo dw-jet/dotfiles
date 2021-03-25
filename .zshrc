@@ -106,3 +106,16 @@ alias yt="youtube-dl --add-metadata -i"
 alias yta="yt -x -f bestaudio/best"
 
 cheat() { curl "https://cheat.sh/$1"; }
+
+function sysinfo() {
+    echo -e "\nKernel Version:"
+    uname -r
+    echo -e "\nOS Version:"
+    lsb_release -sd
+    echo -e "\nSystem Uptime:"
+    uptime
+    echo -e "\nMemory Utilization:"
+    free -h
+    echo -e "\nFilesystem Utilization:"
+    df -h
+}                       
